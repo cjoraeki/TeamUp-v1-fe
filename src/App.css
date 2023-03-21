@@ -1,0 +1,48 @@
+.App {
+ 
+  min-height: 100vh;
+  color: white;
+
+}
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+}
+
+select{
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  
+}
+
+button {
+  
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #330e73;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}

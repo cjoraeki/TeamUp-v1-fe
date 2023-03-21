@@ -1,0 +1,30 @@
+.background-login{
+    width: 100%;
+    height: 100vh;
+    background:url('../../assets/swim.jpg');
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foreget-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     width: 20%;
+    /* height: 50vh; */
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.login-form input{
+    max-width: 100%;
+    width: 250px;
+    margin-bottom: 1rem;
+ 
+}

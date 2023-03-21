@@ -1,19 +1,7 @@
-# Elegant Login & Register Forms built in React
-![Screen Shot 2022-07-25 at 10 55 45 PM](https://user-images.githubusercontent.com/50160672/180913657-95824335-8089-4be3-91ba-6a0cbaef3d71.png)
+# TeamUp-v1-fe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TeamUp Web App is designed for sports enthusiasts to connect with each other and participate in their favorite sport activities. Users can sign up on the app, create a profile, and join groups based on their preferred sports. They can then browse events and activities posted by other users, or create their own and invite others to join.
 
-## Available Scripts
+The app allows users to communicate with each other, form teams, and organize games and tournaments. Users can also rate each other's performance, providing valuable feedback and encouraging friendly competition.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-
-
- {
-      //   currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
-      // }# TeamUp-v1-fe
+With the Sport Web App, users can find and connect with fellow sports enthusiasts in their local community, making it easier to stay active and engaged in their favorite sports.
