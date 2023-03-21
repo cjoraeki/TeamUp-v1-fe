@@ -1,5 +1,5 @@
 import "./dashboard.css";
-import cj from "../../assets/cj.jpeg";
+import pic1 from "../../assets/pic1.jpg";
 import { MdEmail, MdOutlineSportsMartialArts } from "react-icons/md";
 import { BsFillPhoneFill } from "react-icons/bs";
 
@@ -13,7 +13,7 @@ export const Dashboard = () => {
       <div className="dash-parent">
         <div className="dash-left">
           <div className="image">
-            <img src={cj} alt="bigimage" />
+            <img src={pic1} alt="bigimage" />
           </div>
 
           <div className="user-details">

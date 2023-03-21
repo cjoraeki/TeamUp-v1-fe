@@ -1,11 +1,10 @@
 import "./navbar.css";
-import cj from "../../assets/cj.jpeg";
+import pic1 from "../../assets/pic1.jpg";
 import { useNavigate, Link } from "react-router-dom";
 import { HiUserGroup } from "react-icons/hi";
 
 export const NavBar = () => {
   const user = JSON.parse(localStorage.getItem("user"));
-  const username = localStorage.getItem("username");
 
   console.log(user);
   const navigate = useNavigate();
@@ -32,7 +31,7 @@ export const NavBar = () => {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-square avatar">
               <div className="w-20 mask mask-squircle">
-                <img src={cj} alt="profile_pic" />
+                <img src={pic1} alt="profile_pic" />
               </div>
             </label>
 
