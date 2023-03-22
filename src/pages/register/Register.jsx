@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./register.css";
 import { sendData } from "../../utils/datalayer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Register = (props) => {
   const navigate = useNavigate();
@@ -20,12 +22,11 @@ export const Register = (props) => {
 
     console.log(status, error, data);
     if (status === 201) {
-      return alert("Check your email to verify OTP")
-      // return navigate("/otp");
+      return toast.info("Check your email for verification");
     } else if (status === 400) {
-      return alert("Error Occured Please try again ");
+      return toast.error("Error. Please try again");
     } else {
-      alert("Please Login ");
+      alert("Please Login");
       return navigate("/");
     }
   };
@@ -139,6 +140,7 @@ export const Register = (props) => {
           </button>
         </Link>
       </div>
+      <ToastContainer />
     </div>
   );
 };

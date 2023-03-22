@@ -8,8 +8,6 @@ import { ForgotPassword } from "./pages/forgot-password/ForgotPassword";
 import { Profile } from "./pages/profile/Profile";
 import { OTP } from "./pages/otp/OTP";
 import { UpdateEmail } from "./pages/changes/UpdateEmail";
-import { Toastify, toast, zoom, bounce } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { UpdateUsername } from "./pages/changes/UpdateUsername";
 import { ChangePassword } from "./pages/changes/ChangePassword";
 
