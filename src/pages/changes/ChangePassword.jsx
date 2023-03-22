@@ -48,14 +48,15 @@ export const ChangePassword = () => {
               type="text"
               placeholder="Password"
               onChange={handleChange}
-              name="password"
+              name="password" required
             />
-            {/* <input
+            <input
               type="text"
               placeholder="Confirm Password"
               onChange={handleChange}
-              name="child[]"
-            /> */}
+              // name="child[]"
+              required
+            />
             <button type="submit" className="btn btn-wide">
               Submit
             </button>

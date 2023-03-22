@@ -49,6 +49,7 @@ export const UpdateUsername = () => {
               placeholder="Username"
               onChange={handleChange}
               name="username"
+              required
             />
             {/* <input
               type="text"

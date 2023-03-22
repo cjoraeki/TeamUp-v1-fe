@@ -48,7 +48,7 @@ export const UpdateEmail = () => {
               type="text"
               placeholder="Email"
               onChange={handleChange}
-              name="email"
+              name="email" required
             />
             {/* <input
               type="text"

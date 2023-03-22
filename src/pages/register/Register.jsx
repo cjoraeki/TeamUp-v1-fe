@@ -17,14 +17,18 @@ export const Register = (props) => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
+
     const res = await sendData("signup", formData);
     const { status, error, data } = res;
-
     console.log(status, error, data);
+
     if (status === 201) {
       return toast.info("Check your email for verification");
-    } else if (status === 400) {
-      return toast.error("Error. Please try again");
+    }
+    //  else if (status === 400) {
+    // return toast.error("Error. Please try again");
+    else if (data == null) {
+      return toast.error("Input field cannot be empty! ");
     } else {
       alert("Please Login");
       return navigate("/");
@@ -48,6 +52,7 @@ export const Register = (props) => {
               className="input w-full max-w-xs"
               onChange={handleChange}
               name="firstName"
+              required
             />
           </div>
 
@@ -59,6 +64,7 @@ export const Register = (props) => {
               className="input w-full max-w-xs"
               onChange={handleChange}
               name="lastName"
+              required
             />
           </div>
 
@@ -70,6 +76,7 @@ export const Register = (props) => {
               className="input w-full max-w-xs"
               onChange={handleChange}
               name="email"
+              required
             />
           </div>
 
@@ -81,6 +88,7 @@ export const Register = (props) => {
               className="input w-full max-w-xs"
               onChange={handleChange}
               name="phoneNumber"
+              required
             />
           </div>
 
@@ -90,6 +98,7 @@ export const Register = (props) => {
             placeholder="Select"
             onChange={handleChange}
             name="favoriteSports"
+            required
           >
             <option selected disabled></option>
             <option value="Football" className="selec">
@@ -128,6 +137,7 @@ export const Register = (props) => {
             className="input w-full max-w-xs"
             onChange={handleChange}
             name="password"
+            required
           />
 
           <button type="submit" className="btn btn-wide">

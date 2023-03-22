@@ -20,6 +20,7 @@ export const ForgotPassword = () => {
             type="email"
             placeholder="Email"
             id="email"
+            required
           />
 
           <button type="submit" className="btn btn-wide">

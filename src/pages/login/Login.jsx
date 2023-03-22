@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
 import { sendData } from "../../utils/datalayer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -22,13 +24,13 @@ export const Login = () => {
 
     if (status === 200) {
       localStorage.setItem("user", JSON.stringify(data));
-
       console.log(data);
+      toast.success("Login successful");
       return navigate("/profile");
-    } else if (status === 400) {
-      return alert("Error Occured. Please try again ");
+    } else if (data === null) {
+      return toast.error("Input fields cannot be empty");
     } else {
-      alert("Please Login ");
+      toast.info("Please Login");
       return navigate("/");
     }
   };
@@ -42,14 +44,14 @@ export const Login = () => {
           <input
             type="email"
             placeholder="Email or Phone Number"
-            name="email"
+            name="email" required
             onChange={handleChange}
           />
           <label htmlFor="password">Password</label>
           <input
             type="password"
             placeholder="Password"
-            name="password"
+            name="password" required
             onChange={handleChange}
           />
           <button type="submit" className="btn btn-wide">
@@ -67,6 +69,7 @@ export const Login = () => {
           <button className="link-btn">Forgot Password? Click here.</button>
         </Link>
       </div>
+      <ToastContainer />
     </div>
   );
 };
