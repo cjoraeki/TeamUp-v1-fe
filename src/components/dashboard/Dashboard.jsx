@@ -5,8 +5,6 @@ import { BsFillPhoneFill } from "react-icons/bs";
 
 export const Dashboard = () => {
   const user = JSON.parse(localStorage.getItem("user"));
-  // const phoneNumber = localStorage.getItem("phoneNumber");
-  // const favoriteSports = localStorage.getItem("favoriteSports");
 
   return (
     <div className="dashboard">
@@ -17,7 +15,9 @@ export const Dashboard = () => {
           </div>
 
           <div className="user-details">
-            <h3>{user && user.firstName} {user && user.lastName}</h3>
+            <h3>
+              {user && user.firstName} {user && user.lastName}
+            </h3>
             <p>Software Developer</p>
           </div>
 
