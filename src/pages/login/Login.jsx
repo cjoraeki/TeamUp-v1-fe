@@ -26,7 +26,9 @@ export const Login = () => {
       localStorage.setItem("user", JSON.stringify(data));
       console.log(data);
       toast.success("Login successful");
-      return navigate("/profile");
+      return setTimeout(() => {
+        navigate("/profile");
+      }, 3000);
     } else if (data === null) {
       return toast.error("Input fields cannot be empty");
     } else {

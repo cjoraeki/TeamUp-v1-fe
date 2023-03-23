@@ -37,10 +37,11 @@ export const OTP = () => {
 
         <form className="login-form" onSubmit={handleFormSubmit} method="post">
           <input
-            type="search"
+            type="number"
             placeholder="OTP"
             onChange={handleChange}
             name="otp"
+            required
           />
           <button type="submit" className="btn btn-wide">
             Submit
