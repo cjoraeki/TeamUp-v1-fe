@@ -44,14 +44,16 @@ export const Login = () => {
           <input
             type="email"
             placeholder="Email or Phone Number"
-            name="email" required
+            name="email"
+            required
             onChange={handleChange}
           />
           <label htmlFor="password">Password</label>
           <input
             type="password"
             placeholder="Password"
-            name="password" required
+            name="password"
+            required
             onChange={handleChange}
           />
           <button type="submit" className="btn btn-wide">
